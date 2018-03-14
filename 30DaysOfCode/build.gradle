@@ -1,0 +1,62 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.google.guava:guava:23.0'
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}
+
+def _30Days = '30 Days of Code'
+
+task day0(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 0: Hello, World."
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day0Kt'
+}
+task day1(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 1: Data Types"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day1Kt'
+}
+task day2(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 2: Operators"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day2Kt'
+}
+task day3(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 3: Intro to Conditional Statements"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day3Kt'
+}
+task day4(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 4: Class vs. Instance"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day4Kt'
+}
+task day5(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 5: Loops"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day5Kt'
+}
+task day6(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 6: Let's Review"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day6Kt'
+}
+task day7(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 7: Arrays"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day7Kt'
+}
