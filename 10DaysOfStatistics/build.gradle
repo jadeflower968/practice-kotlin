@@ -66,3 +66,9 @@ task statday31(type:Exec, dependsOn:build) {
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday31Kt'
 }
+task statday32(type:Exec, dependsOn:build) {
+    group = _10Days
+    description = "Day 3: Cards of the Same Suit"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday32Kt'
+}

@@ -60,3 +60,9 @@ task day7(type:Exec, dependsOn:build) {
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day7Kt'
 }
+task day8(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 8: Dictionaries and Maps"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/30DaysOfCode.jar', 'Day8Kt'
+}
