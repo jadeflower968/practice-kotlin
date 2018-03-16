@@ -80,7 +80,7 @@ task statday33(type:Exec, dependsOn:build) {
 }
 task statday41(type:Exec, dependsOn:build) {
     group = _10Days
-    description = Day 4: Binomial Distribution I"
+    description = "Day 4: Binomial Distribution I"
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday41Kt'
 }
