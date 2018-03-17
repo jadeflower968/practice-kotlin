@@ -84,3 +84,15 @@ task statday41(type:Exec, dependsOn:build) {
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday41Kt'
 }
+task statday42(type:Exec, dependsOn:build) {
+    group = _10Days
+    description = "Day 4: Binomial Distribution II"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday42Kt'
+}
+task statday43(type:Exec, dependsOn:build) {
+    group = _10Days
+    description = "Day 4: Geometric Distribution I"
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/10DaysOfStatistics.jar', 'Statday43Kt'
+}

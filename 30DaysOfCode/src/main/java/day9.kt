@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     reader.close()
 }
 
-fun factorial(N: Int): Int {
+private fun factorial(N: Int): Int {
     if (N <= 1) {
         return 1
     } else {

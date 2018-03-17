@@ -1,13 +1,19 @@
 fun main(args: Array<String>) {
-    val pp = readLine()!!.split(" ").map(String::toDouble)
-    val p = pp[0] / (pp[0] + pp[1])
-    val n = 6
+    val d = readLine()!!.split(" ").map(String::toInt)
+    val p = d[0].toDouble() / 100.0
+    val n = d[1]
+    
     
     var sum: Double = 0.0
-    for (x in 3..6) {
+    for (x in 0..2) {
         sum += b(x, n, p)
     }
+    println("%.3f".format(sum))
     
+    sum = 0.0
+    for (x in 2..n) {
+        sum += b(x, n, p)
+    }
     println("%.3f".format(sum))
 }
 
